@@ -18,6 +18,7 @@
             color: white;
             padding: 10px 0;
             text-align: center;
+            position: relative;
         }
 
         nav ul {
@@ -48,6 +49,25 @@
             text-align: center;
             padding: 10px 0;
         }
+
+        .admin-button {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: white;
+            color: #004080;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .admin-button:hover {
+            background-color: #ddd;
+        }
     </style>
 </head>
 <body>
@@ -61,6 +81,7 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+        <a href="admin.html" class="admin-button">Admin Login</a>
     </header>
 
     <section id="home">
@@ -88,3 +109,4 @@
     </footer>
 </body>
 </html>
+
