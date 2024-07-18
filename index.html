@@ -50,11 +50,14 @@
             padding: 10px 0;
         }
 
-        .admin-button {
+        .button-container {
             position: absolute;
             right: 20px;
             top: 50%;
             transform: translateY(-50%);
+        }
+
+        .button-container a {
             background-color: white;
             color: #004080;
             border: none;
@@ -63,9 +66,10 @@
             cursor: pointer;
             text-decoration: none;
             font-weight: bold;
+            margin-left: 10px;
         }
 
-        .admin-button:hover {
+        .button-container a:hover {
             background-color: #ddd;
         }
     </style>
@@ -81,7 +85,10 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <a href="admin.html" class="admin-button">Admin Login</a>
+        <div class="button-container">
+            <a href="admin.html">Admin Login</a>
+            <a href="register.html">Register</a>
+        </div>
     </header>
 
     <section id="home">
@@ -109,4 +116,3 @@
     </footer>
 </body>
 </html>
-
